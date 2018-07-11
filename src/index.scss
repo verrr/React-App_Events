@@ -1,0 +1,11 @@
+@import "scss/base/vars";
+@import "scss/base/mixins";
+
+@import 'scss/main';
+@import "scss/blocks/header";
+@import "scss/Containers/mainEventList";
+@import "scss/Containers/featuredEvents";
+@import "scss/Containers/defaultEvents";
+
+@import "scss/blocks/featuredEvent";
+@import "scss/blocks/defaultEvent";

@@ -1,0 +1,56 @@
+/*
+spacing vars
+*/
+/*
+colors
+*/
+body {
+  margin: 0; }
+
+.App-header {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center; }
+
+.App-MainEventList {
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px; }
+
+.FeaturedEvents {
+  border: 1px solid red;
+  width: 100%; }
+
+.DefaultEvents {
+  border: 1px solid yellow;
+  width: 100%;
+  margin-top: 15px; }
+
+.FeatureEvent {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 40%; }
+  .FeatureEvent:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
+
+.event--featured--container {
+  padding: 2px 16px; }
+
+.DefaultEvent {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 40%; }
+  .DefaultEvent:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
+
+.event--default--container {
+  padding: 2px 16px; }
+
+/*# sourceMappingURL=index.css.map */

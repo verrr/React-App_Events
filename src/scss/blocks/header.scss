@@ -1,0 +1,4 @@
+.App-header {
+  @include border(black);
+  @include flex-row-noWrap-all-centered();
+}

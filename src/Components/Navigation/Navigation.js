@@ -4,8 +4,10 @@ class Navigation extends Component {
     render() {
         return (
             <nav className="App-main-navigation">
-                <a href="#">Log in</a>
-                <a href="#">Sign up</a>
+                <ul>
+                    <li><a href="#">Log in</a></li>
+                    <li><a href="#">Sign up</a></li>
+                </ul>
             </nav>
         );
     }

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom'
 
 class DefaultEvent extends Component {
     render() {
@@ -8,11 +9,12 @@ class DefaultEvent extends Component {
                 <div className="event--default--container">
                     <h4><b>John Doe</b></h4>
                     <p>Architect & Engineer</p>
-                    <a href="#">Read more</a>
+                    <Link to="/event">Read more</Link>
+
                 </div>
             </div>
         );
     }
 }
-
+//TODO: pass state props to link
 export default DefaultEvent;

@@ -1,14 +1,24 @@
 import React, {Component} from 'react';
+import {BrowserRouter} from 'react-router-dom';
+import {Route} from 'react-router-dom';
 import Header from './Containers/Header';
 import MainEventList from './Containers/MainEventList';
+import EventDetail from './Containers/EventDetail';
 
 class App extends Component {
     render() {
         return (
-            <div className="App">
-                <Header/>
-                <MainEventList/>
-            </div>
+            <BrowserRouter>
+                <div className="App">
+
+                    <Route path="/" exact component={Header}/>
+                    <Route path="/" exact component={MainEventList}/>
+                    <Route path="/event" exact component={EventDetail}/>
+
+
+
+                </div>
+            </BrowserRouter>
         );
     }
 }

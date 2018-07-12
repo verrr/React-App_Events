@@ -13,7 +13,7 @@ class DefaultEvents extends Component {
         axios.get('https://jsonplaceholder.typicode.com/posts')
             .then(
                 (response) => {
-                    const events = response.data.slice(0, 4);
+                    const events = response.data.slice(0, 15);
 
                     const updatedEvents = events.map(event => {
                         return {
@@ -35,7 +35,7 @@ class DefaultEvents extends Component {
             });
 
         return (
-            <section className="FeaturedEvents">
+            <section className="DefaultEvents">
                 {events}
             </section>
         );

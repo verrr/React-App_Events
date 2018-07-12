@@ -1,5 +1,6 @@
 .App-MainEventList{
-  @include border(green);
   @include flex-column-noWrap-all-centered();
   padding: 0 30px;
+  width: 100%;
+  max-width: 1800px;
 }

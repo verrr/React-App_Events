@@ -6,7 +6,7 @@ class Header extends Component {
     render() {
         return (
             <header className="App-header">
-                <p>Header here</p>
+                <p className='App-title'>Event react app prototype</p>
                 <Navigation/>
                 <Search/>
             </header>

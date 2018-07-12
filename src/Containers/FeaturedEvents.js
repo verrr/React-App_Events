@@ -13,7 +13,7 @@ class FeaturedEvents extends Component {
         axios.get('https://jsonplaceholder.typicode.com/posts')
             .then(
                 (response) => {
-                    const events = response.data.slice(0, 4);
+                    const events = response.data.slice(0, 6);
 
                     const updatedEvents = events.map(event => {
                         return {
@@ -36,7 +36,6 @@ class FeaturedEvents extends Component {
 
         return (
             <section className="FeaturedEvents">
-                <h3>Featured events</h3>
                 {events}
             </section>
         );

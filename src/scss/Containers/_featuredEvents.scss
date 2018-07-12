@@ -1,4 +1,5 @@
 .FeaturedEvents{
-  @include border(red);
+  @include flex-row-noWrap-all-centered;
+  flex-wrap: wrap;
   width: 100%;
 }

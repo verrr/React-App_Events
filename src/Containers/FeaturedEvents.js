@@ -19,7 +19,7 @@ class FeaturedEvents extends Component {
                         return {
                             ...event,
                             location: 'Denmark'
-                        }
+                        };
                     });
                     this.setState({events: updatedEvents});
                 }
@@ -30,7 +30,7 @@ class FeaturedEvents extends Component {
         const events = this.state.events.map(
             event => {
 
-                return <FeatureEvent key={event.id} eventProps={event} match={ this.props.match}/>;
+                return <FeatureEvent key={event.id} eventProps={event} match={this.props.match}/>;
 
             });
 

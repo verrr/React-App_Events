@@ -1,0 +1,48 @@
+.inputElement {
+  font-family: $fontFam;
+  padding: 10px;
+  height: 30px;
+  min-width: 300px;
+  @include border($darker);
+  border-radius: 4px;
+}
+
+.form {
+  &--signUp {
+    @include flex-column-noWrap-all-centered();
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 100%;
+    max-width: 400px;
+    min-width: 250px;
+    height: auto;
+    min-height: 550px;
+    margin-bottom: $spacing-medium;
+    &:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+    textarea {
+      min-height: 100px;
+    }
+    button{
+      background-color: $orange;
+      @include border(transparent);
+      border-radius: 4px;
+      font-family: $fontFam;
+      height: 35px;
+      width: 100px;
+      margin-bottom: $spacing-medium;
+      color: $white;
+      &:hover{
+        background-color: $orange-light;
+      }
+    }
+  }
+}
+
+.ContactData {
+  width: 100%;
+  @include flex-column-noWrap-all-centered();
+  font-family: $fontFam;
+}

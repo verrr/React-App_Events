@@ -4,6 +4,7 @@ import {Route} from 'react-router-dom';
 import Header from './Containers/Header';
 import MainEventList from './Containers/MainEventList';
 import EventDetail from './Containers/EventDetail';
+import ContactData from './Containers/ContactData';
 
 class App extends Component {
     render() {
@@ -17,6 +18,8 @@ class App extends Component {
 
                     <Route path="/event/:id" exact component={Header}/>
                     <Route path="/event/:id" exact component={EventDetail}/>
+                    <Route path="/signup" exact component={Header}/>
+                    <Route path="/signup" exact component={ContactData}/>
 
 
 

@@ -6,7 +6,7 @@ class MainEventList extends Component {
     render() {
         return (
             <div className="App-MainEventList">
-                <h1>Event List Title</h1>
+                <h1 style={{marginBottom: '30px'}}>Join our events</h1>
                 <FeaturedEvents/>
                 <DefaultEvents/>
             </div>

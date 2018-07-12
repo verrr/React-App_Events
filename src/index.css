@@ -224,4 +224,52 @@ ul {
   .EventDetail:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
 
+.inputElement {
+  font-family: "helvetica";
+  padding: 10px;
+  height: 30px;
+  min-width: 300px;
+  border: 1px solid #DCDCDC;
+  border-radius: 4px; }
+
+.form--signUp {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 100%;
+  max-width: 400px;
+  min-width: 250px;
+  height: auto;
+  min-height: 550px;
+  margin-bottom: 15px; }
+  .form--signUp:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
+  .form--signUp textarea {
+    min-height: 100px; }
+  .form--signUp button {
+    background-color: darkorange;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-family: "helvetica";
+    height: 35px;
+    width: 100px;
+    margin-bottom: 15px;
+    color: white; }
+    .form--signUp button:hover {
+      background-color: rgba(255, 140, 0, 0.8); }
+
+.ContactData {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "helvetica"; }
+
 /*# sourceMappingURL=index.css.map */

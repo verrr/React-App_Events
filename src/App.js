@@ -13,7 +13,8 @@ class App extends Component {
 
                     <Route path="/" exact component={Header}/>
                     <Route path="/" exact component={MainEventList}/>
-                    <Route path="/event" exact component={EventDetail}/>
+                    <Route path="/event/:id" exact component={EventDetail}/>
+
 
 
 

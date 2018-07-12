@@ -53,4 +53,9 @@ body {
 .event--default--container {
   padding: 2px 16px; }
 
+.article--full__title {
+  display: block; }
+  .article--full__title:first-letter {
+    text-transform: capitalize; }
+
 /*# sourceMappingURL=index.css.map */

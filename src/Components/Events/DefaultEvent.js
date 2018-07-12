@@ -1,20 +1,21 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom'
 
-class DefaultEvent extends Component {
-    render() {
+const defaultEvent = (props) => {
+
         return (
             <div className="DefaultEvent">
-                <img src="img_avatar.png" alt="Avatar" />
+                <img className="event--caption__small" src={props.caption} alt="Avatar" />
                 <div className="event--default--container">
-                    <h4><b>John Doe</b></h4>
-                    <p>Architect & Engineer</p>
-                    <Link to="/event">Read more</Link>
+                    <h4 className="event--title">{props.eventProps.title}</h4>
+                    <h6 className="event--location">{props.eventProps.location}</h6>
+                    <p className="event--description__short">{props.eventProps.description}</p>
+                    <Link to="/event">read more...</Link>
 
                 </div>
             </div>
         );
-    }
-}
+
+};
 //TODO: pass state props to link
-export default DefaultEvent;
+export default defaultEvent;

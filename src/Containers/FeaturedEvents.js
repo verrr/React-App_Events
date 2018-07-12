@@ -36,6 +36,7 @@ class FeaturedEvents extends Component {
 
         return (
             <section className="FeaturedEvents">
+
                 {events}
             </section>
         );

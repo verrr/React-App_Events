@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
 
+
 class EventDetail extends Component {
     state = {
         loadedEvent: null
@@ -36,11 +37,11 @@ class EventDetail extends Component {
             event = (
                 <section className="EventDetail">
                     <h2 className="article--full__title">{this.state.loadedEvent.title}</h2>
-                    <h4>{this.state.location}</h4>
+                    <h4 className={'article--full__location'}>{this.state.location}</h4>
                     <article className="article--full__body">
                         {this.state.loadedEvent.body}
                     </article>
-                    <Link to={'/'}>Join</Link>
+                    <Link className='card-link' to={'/'}>Join</Link>
                 </section>
             );
         }

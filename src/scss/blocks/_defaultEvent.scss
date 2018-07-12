@@ -16,9 +16,36 @@
 .event {
   &--default{
     &--container{
-      padding: 20px;
+      padding: 10px 20px;
+      @include flex-column-noWrap-all-centered();
+      align-items: flex-start;
+      height: $cardStorySmHeight;
+      justify-content: space-between;
+      *{
+        display: block;
+        &:first-letter{
+          text-transform: capitalize;
+        }
+      }
 
     }
   }
 
+}
+.card-link{
+  background-color: $orange;
+  border-radius: 2px;
+  padding: $spacing-small $spacing-medium $spacing-small $spacing-medium;
+  color: $white;
+  transition: all 150ms ease-in-out;
+  &--small{
+    @extend .card-link;
+    padding: $spacing-small/2 $spacing-small $spacing-small/2 $spacing-small;
+    color: $white;
+    font-size: .8em;
+
+  }
+  &:hover{
+    background-color: $orange-light;
+  }
 }

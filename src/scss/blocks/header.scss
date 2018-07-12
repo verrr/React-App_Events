@@ -1,7 +1,35 @@
 .App-header {
   @include flex-row-noWrap-all-centered();
   width: 100%;
-  max-width: 1800px;
-  padding: 0 30px;
+  height: 70px;
+  background-color: $black;
+  margin-bottom: $spacing-xxl;
 
+}
+.App-title{
+  flex-basis: 33%;
+  color: $white;
+  width: fit-content;
+  text-transform: uppercase;
+  font-family: $fontFam;
+  @media screen and (max-width:655px){
+    display: none;
+  }
+}
+.App-search{
+  flex-basis: 33%;
+  input{
+    float: right;
+    border: none;
+    width: 300px;
+    height: 30px;
+    border-radius: 4px;
+    padding: 5px 5px 5px 10px;
+    &::placeholder{
+      text-transform: capitalize;
+    }
+  }
+  @media screen and (max-width:655px){
+    display: none;
+  }
 }

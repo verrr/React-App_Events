@@ -4,6 +4,7 @@
   width: 40%;
   max-width: 480px;
   min-width: 300px;
+  height: 500px;
   margin: $spacing-medium;
   &:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -15,6 +16,18 @@
 .event {
   &--featured{
     &--container{
+      padding: 20px;
+      @include flex-column-noWrap-all-centered();
+      align-items: flex-start;
+      height: $cardStoryHeight;
+      justify-content: space-between;
+      *{
+        display: block;
+        &:first-letter{
+          text-transform: capitalize;
+        }
+      }
+
     }
   }
   &--caption{

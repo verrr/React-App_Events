@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import DefaultEvent from '../Components/Events/DefaultEvent';
 import axios from 'axios/index';
+import img from '../assets/img/baloons.jpg'
 
 class DefaultEvents extends Component {
     state = {
@@ -21,7 +22,7 @@ class DefaultEvents extends Component {
                             location: 'Denmark'
                         };
                     });
-                    this.setState({events: updatedEvents});
+                    this.setState({events: updatedEvents, img: img});
                 }
             );
     }
@@ -30,7 +31,9 @@ class DefaultEvents extends Component {
         const events = this.state.events.map(
             event => {
 
-                return <DefaultEvent key={event.id} eventProps={event} match={ this.props.match}/>;
+                return <DefaultEvent key={event.id}
+                                     eventProps={event}
+                                     match={this.props.match}/>;
 
             });
 

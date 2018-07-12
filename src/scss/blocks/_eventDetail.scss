@@ -2,13 +2,39 @@
   &--full{
     &__title{
       display: block;
+      font-family: $fontFam;
+      text-align: center;
       &:first-letter{
         text-transform: capitalize;
       }
 
     }
+    &__location{
+      text-align: center;
+    }
+    &__body{
+      width: 100%;
+
+      &:first-letter{
+        text-transform: capitalize;
+      }
+    }
   }
 }
 .EventDetail{
   padding:  0 30px;
+  @include flex-column-noWrap-all-centered();
+  justify-content: space-around;
+
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  max-width: 320px;
+  min-width: 250px;
+  height: auto;
+  min-height: 350px;
+  margin-bottom: $spacing-medium;
+  &:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
 }
